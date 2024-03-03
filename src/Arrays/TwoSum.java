@@ -6,7 +6,6 @@ package Arrays;
  * and you may not use the same element twice.
  */
 public class TwoSum {
-
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
