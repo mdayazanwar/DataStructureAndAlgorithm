@@ -1,4 +1,4 @@
-package LinkList.SinglyLinkList;
+package LinkList.SinglyLinkList.Impl;
 
 public class SinglyLinkList {
     private Node head;
@@ -15,17 +15,18 @@ public class SinglyLinkList {
     }
 
     public Node insert(int value, int location) {
+        if(location < 0) {
+            return head;
+        }
+        Node newNode = new Node();
+        newNode.value = value;
         if( head == null) {
             return createLinkList(value);
         }else if(location == 0)  { /* Insert Element from  front */
-            Node newNode = new Node();
-            newNode.value = value;
             newNode.next = head;
             head = newNode;
         }
         else if(location >= size) { // insert element from last in link list
-            Node newNode  = new Node();
-            newNode.value =  value;
             newNode.next = null;
             tail.next = newNode;
             tail = newNode;
@@ -37,8 +38,6 @@ public class SinglyLinkList {
                 tempNode = tempNode.next;
                 position++;
             }
-            Node newNode =  new Node();
-            newNode.value =  value;
             newNode.next = tempNode.next;
             tempNode.next = newNode;
 
