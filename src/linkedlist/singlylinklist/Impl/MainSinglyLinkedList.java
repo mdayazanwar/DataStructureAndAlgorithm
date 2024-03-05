@@ -1,4 +1,4 @@
-package LinkList.SinglyLinkList.Impl;
+package linkedlist.singlylinklist.Impl;
 
 public class MainSinglyLinkedList {
     public static void main(String[] args) {
