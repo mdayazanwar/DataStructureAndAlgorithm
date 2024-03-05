@@ -1,4 +1,4 @@
-package LinkList.DoublyLinkList;
+package linkedlist.doublylinklist;
 
 public class DoublyLinkList {
     Node head;

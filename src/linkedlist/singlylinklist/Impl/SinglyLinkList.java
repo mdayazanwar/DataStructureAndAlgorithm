@@ -1,4 +1,4 @@
-package LinkList.SinglyLinkList.Impl;
+package linkedlist.singlylinklist.Impl;
 
 public class SinglyLinkList {
     private Node head;

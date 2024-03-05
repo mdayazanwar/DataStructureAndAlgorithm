@@ -1,4 +1,4 @@
-package Arrays;
+package arrays;
 
 /**
  * Write a program to check if an array is unique or not
