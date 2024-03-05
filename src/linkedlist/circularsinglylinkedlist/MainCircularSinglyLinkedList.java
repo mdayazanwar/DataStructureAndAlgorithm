@@ -16,6 +16,17 @@ public class MainCircularSinglyLinkedList {
         circularLinkedList.traversal();
         circularLinkedList.insert(65 ,5);
         circularLinkedList.traversal();
+        circularLinkedList.delete(0);
+        circularLinkedList.delete(0);
+        circularLinkedList.traversal();
+        circularLinkedList.delete(6);
+        circularLinkedList.delete(5);
+        circularLinkedList.traversal();
+        circularLinkedList.delete(2);
+        circularLinkedList.traversal();
+        circularLinkedList.search(60);
+        circularLinkedList.deleteEntireList();
+        circularLinkedList.traversal();
 
     }
 }
