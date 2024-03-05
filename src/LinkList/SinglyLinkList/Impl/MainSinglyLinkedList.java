@@ -1,6 +1,6 @@
 package LinkList.SinglyLinkList.Impl;
 
-public class Main {
+public class MainSinglyLinkedList {
     public static void main(String[] args) {
         SinglyLinkList singlyLinkList = new SinglyLinkList();
         singlyLinkList.createLinkList(10);
@@ -15,6 +15,22 @@ public class Main {
         singlyLinkList.insert(15, 2);
         singlyLinkList.traversal();
 
+        singlyLinkList.search(10);
+
+        singlyLinkList.delete(0);
+        singlyLinkList.delete(0);
+        singlyLinkList.traversal();
+
+        singlyLinkList.delete(4);
+        singlyLinkList.delete(3);
+
+        singlyLinkList.traversal();
+        singlyLinkList.delete(1);
+
+        singlyLinkList.traversal();
+
+        singlyLinkList.deleteEntireList();
+        singlyLinkList.traversal();
 
     }
 }
