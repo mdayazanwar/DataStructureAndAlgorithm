@@ -17,7 +17,7 @@ public class Queue {
 
     public void enqueue(int item) {
         if(isFull()) {
-            System.out.println("Queue is full");
+            System.out.println("Queue is full"); // We can also implement dynamic resizing in case array is full. But it has its own overhead. PLease refer resize function. It is not used in here.
             return;
         }
         rear = (rear + 1) % capacity;
@@ -50,6 +50,17 @@ public class Queue {
 
     private boolean isFull() {
         return size == capacity;
+    }
+
+    private void resizeArray() {
+        int newCapacity = array.length * 2;
+        int[] newArray = new int[newCapacity];
+        for (int i = 0; i < size; i++) {
+            newArray[i] = array[(front + i) % array.length];
+        }
+        array = newArray;
+        front = 0;
+        rear = size - 1;
     }
 }
 
