@@ -1,4 +1,4 @@
-package Queue;
+package queue.arraybasedimpl;
 
 public class Queue {
     int[] array;
