@@ -23,8 +23,8 @@ public class BinarySearchTree {
             return;
         }
 
-        preOrderTraversal(node.left);
-        preOrderTraversal(node.right);
+        postOrderTraversal(node.left);
+        postOrderTraversal(node.right);
         System.out.print(node.value +" ");
     }
 
